@@ -1,7 +1,7 @@
 <h2>Konverterare</h2>
 
-<h3>Konvertera från meter till fot:</h3>
-    <div class="conatiner">
+<h3>Konvertera mellan meter och fot:</h3>
+<div class="conatiner">
     <label for="meter">Meter:</label>
     <input type="number" id="meter" [(ngModel)]="meter" (ngModelChange)="convertMeter()">
     <br>
@@ -9,3 +9,11 @@
     <input type="number" id="foot" [(ngModel)]="foot" (ngModelChange)="convertFoot()">
 </div>
 
+<h3>Konvertera mellan celsius och fahrenheit:</h3>
+<div class="conatiner">
+    <label for="celsius">Celsius:</label>
+    <input type="number" id="celsius" [(ngModel)]="celsius" (ngModelChange)="convertCelsius()">
+    <br>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input type="number" id="fahrenheit" [(ngModel)]="fahrenheit" (ngModelChange)="convertFahrenheit()">
+</div>

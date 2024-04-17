@@ -30,11 +30,13 @@ export class ConverterComponent {
   }
 
   convertCelsius():void {
-
+    this.result = ((this.celsius * 1.8) + 32).toFixed(2);
+    this.fahrenheit = parseFloat(this.result);
   }
 
   convertFahrenheit():void {
-    
+    this.result = ((this.fahrenheit - 32) / 1.8).toFixed(2);
+    this.celsius = parseFloat(this.result);
   }
 
 }
