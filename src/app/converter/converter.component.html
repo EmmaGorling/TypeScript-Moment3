@@ -1,1 +1,11 @@
-<p>converter works!</p>
+<h2>Konverterare</h2>
+
+<h3>Konvertera från meter till fot:</h3>
+    <div class="conatiner">
+    <label for="meter">Meter:</label>
+    <input type="number" id="meter" [(ngModel)]="meter" (ngModelChange)="convertMeter()">
+    <br>
+    <label for="foot">Fot:</label>
+    <input type="number" id="foot" [(ngModel)]="foot" (ngModelChange)="convertFoot()">
+</div>
+
