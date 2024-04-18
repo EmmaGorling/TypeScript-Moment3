@@ -2,9 +2,46 @@
 
 <article>
     <h3>Arbeta med Angular</h3>
-    <p></p>
+    <p>Webbplatsen är uppbyggd av sex stycken komponenter:</p>
+    <dl>
+        <dt>Home</dt>
+            <dd>Startsida</dd>
+        <dt>About</dt>
+            <dd>Om-sida</dd>
+        <dt>Mainmenu</dt>
+            <dd>Navigeringsmenyn, infogad till app.component</dd>
+        <dt>Celsius</dt>
+            <dd>Komponent som sköter konvertering mellan celsius och fahrenheit</dd>
+        <dt>Meter</dt>
+            <dd>Komponent som sköter konvertering mellan meter och fot</dd>
+        <dt>Converter</dt>
+            <dd>Komponent där vardera komponent för konvertering har infogats</dd>
+    </dl>
+    <h4>Navigering</h4>
+    <p>
+        Navigeringen mellan de olika sidorna sköts med routing i app.routes.filen, 
+        där har de olika undesridorna lagts till med en lämplig "path" tillsammans med den tillhörande komponenten.
+        <br>
+        För att sidorna ska hämtas utan att webbplatsen "laddas om" importeras RouterLink till mainmenu.component.ts-filen, 
+        därefter läggs länkarna till undersidorna till med "routerLink" i stället för "href".
+    </p>
+    <h4>Konvertering</h4>
+    <p>
+        I HTML-filerna för de komponenter som sköter konvertering har två inputs lagts till, 
+        för att få en tvåvägs-kommunikation mellan html- och ts-filen har [(ngModel)] använts. 
+        Till vardera inputs sätt även en eventlyssnare som lyssnar till "key up", 
+        där en metod anropas som sköter själva konverteringen och skriver ut motsvarande värde till motsvarande input.
+        <br>
+        (Lägger man in ett värde i input för meter skrivs motsvarande längd i fot ut till input för fot.)
+    </p>
 </article>
 
 <article>
     <h3>Slutsatser</h3>
+    <p>
+        Det gick oförskämt lätt att börja arbeta med Angular, med tanke på att jag 
+        personligen aldrig har sett eller använt någon form av ramverk på det sättet innan.
+        Men bara efter detta lilla projekt blir fördelarna med ramverk tydliga, en filstruktur som är lätt att hålla 
+        reda på och riktigt snygg och prydlig kod!
+    </p>
 </article>
