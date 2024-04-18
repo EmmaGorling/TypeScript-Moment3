@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+article {
+    padding: 0.5em 1em;
+    background-color: $light-green;
+    margin: 2em auto 1em;
+    max-width: 600px;
+    
+    dt {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    p {
+        font-weight: 500;
+    }
+}

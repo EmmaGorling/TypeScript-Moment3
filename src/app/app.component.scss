@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+header, footer {
+    margin: 0;
+    background-color: $bay;
+}
+h1, h2, footer {
+    text-align: center;
+}
+footer {
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+ul {
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 2.5em;
+}
+li {
+    list-style: none;
+    background-color: $green;
+    padding: 5px;
+    margin: 5px auto 5px 20px;
+    width: 90%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.active-link {
+    background-color: $light-green;
+    text-decoration: underline;
+}
+
+@media (min-width:600px) {
+    nav {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    li {
+        display: inline;
+        margin: 0 auto;
+        padding: 5px 20px;
+    }
+}
+@media (min-width: 1000px) {
+    li {
+        font-size: 1.6em;
+    }
+}
