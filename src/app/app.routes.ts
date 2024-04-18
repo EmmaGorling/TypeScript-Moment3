@@ -4,7 +4,7 @@ import { ConverterComponent } from './converter/converter.component';
 import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
-    {path: 'home', component: HomeComponent},
+    {path: '', component: HomeComponent},
     {path: 'converter', component: ConverterComponent},
     {path: 'about', component: AboutComponent}
 ];
