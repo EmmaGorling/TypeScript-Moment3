@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+p {
+    width: 90%;
+    max-width: 600px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: $light-green;
+    font-weight: 500;
+}
