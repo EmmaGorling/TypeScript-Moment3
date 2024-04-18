@@ -11,4 +11,7 @@ import { MainmenuComponent } from './mainmenu/mainmenu.component';
 })
 export class AppComponent {
   title = 'moment3';
+
+  // Images
+  headerImage:string = "assets/favicon.svg";
 }

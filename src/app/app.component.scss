@@ -4,6 +4,14 @@ header, footer {
     margin: 0;
     background-color: $bay;
 }
+img {
+    width: 10%;
+    max-width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3em auto auto 1em;
+}
 h1, h2, footer {
     text-align: center;
 }
