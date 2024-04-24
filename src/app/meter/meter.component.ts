@@ -18,12 +18,12 @@ export class MeterComponent {
 
   // From meter to foot
   convertMeter():void {
-    this.result = (this.meter * 0.3048).toFixed(2);
+    this.result = (this.meter * 3.2808399).toFixed(2);
     this.foot = parseFloat(this.result);
   }
   // From foot to meter
   convertFoot():void {
-    this.result = (this.foot * 3.2808399).toFixed(2);
+    this.result = (this.foot * 0.3048).toFixed(2);
     this.meter = parseFloat(this.result);
   }
 }
